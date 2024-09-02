@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="caimito-evox" fetch="https://github.com/caimito-evox" revision="udc" />
+
+    <project name="device_google_zumapro" path="device/google/zumapro" remote="caimito-evox"/>
+    <project name="device_google_zumapro-sepolicy" path="device/google/zumapro-sepolicy" remote="caimito-evox"/>
+
+    <project name="device_google_caimito" path="device/google/caimito" remote="caimito-evox"/>
+    <project name="device_google_caimito-kernels_6.1" path="device/google/caimito-kernels/6.1" remote="caimito-evox"/>
+    <project name="device_google_caimito-sepolicy" path="device/google/caimito-sepolicy" remote="caimito-evox"/>
+
+    <project name="android_device_google_gs101" path="device/google/gs101" remote="caimito-evox"/>
+    <project name="android_device_google_gs101-sepolicy" path="device/google/gs101-sepolicy" remote="caimito-evox"/>
+    <project name="device_google_gs-common" path="device/google/gs-common" remote="caimito-evox"/>
+</manifest>
