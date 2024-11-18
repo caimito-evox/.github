@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="caimito-evox" fetch="https://github.com/caimito-evox" revision="udc" />
+    <remote name="caimito-evox" fetch="https://github.com/caimito-evox" revision="vic" />
+	<remote name="aosp-google-caimito" fetch="https://android.googlesource.com" review="android-review.googlesource.com" revision="refs/tags/android-15.0.0_r5" clone-depth="1" />
+    <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-22.0" />
 
-    <project name="device_google_zumapro" path="device/google/zumapro" remote="caimito-evox"/>
-    <project name="device_google_zumapro-sepolicy" path="device/google/zumapro-sepolicy" remote="caimito-evox"/>
 
+	<!-- Devices -->
     <project name="device_google_caimito" path="device/google/caimito" remote="caimito-evox"/>
-    <project name="device_google_caimito-kernels_6.1" path="device/google/caimito-kernels/6.1" remote="caimito-evox"/>
-    <project name="device_google_caimito-sepolicy" path="device/google/caimito-sepolicy" remote="caimito-evox"/>
+	<project name="device_google_komodo" path="device/google/komodo" remote="caimito-evox"/>
+	<project name="device_google_zumapro" path="device/google/zumapro" remote="caimito-evox"/>
+	<project name="device_google_gs-common" path="device/google/gs-common" remote="caimito-evox"/>
+	<project name="device_google_gs101" path="device/google/gs101" remote="caimito-evox"/>
 
-    <project name="android_device_google_gs101" path="device/google/gs101" remote="caimito-evox"/>
-    <project name="android_device_google_gs101-sepolicy" path="device/google/gs101-sepolicy" remote="caimito-evox"/>
-    <project name="device_google_gs-common" path="device/google/gs-common" remote="caimito-evox"/>
+	<!-- Kernel -->
+	<project name="device/google/caimito-kernels/6.1" path="device/google/caimito-kernels/6.1" remote="caimito-evox"/>
+
+	<!-- vendor -->
+	<project name="vendor_google_komodo" path="vendor/google/komodo" remote="caimito-evox"/>
 </manifest>
