@@ -2,8 +2,6 @@
 <manifest>
     <remote name="caimito-evox" fetch="https://github.com/caimito-evox" revision="vic" />
 	<remote name="aosp-google-caimito" fetch="https://android.googlesource.com" review="android-review.googlesource.com" revision="refs/tags/android-15.0.0_r5" clone-depth="1" />
-    <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-22.0" />
-
 
 	<!-- Devices -->
     <project name="device_google_caimito" path="device/google/caimito" remote="caimito-evox"/>
@@ -13,8 +11,11 @@
 	<project name="device_google_gs101" path="device/google/gs101" remote="caimito-evox"/>
 
 	<!-- Kernel -->
-	<project name="device/google/caimito-kernels/6.1" path="device/google/caimito-kernels/6.1" remote="caimito-evox"/>
+	<project name="device/google/caimito-kernels/6.1" path="device/google/caimito-kernels/6.1" remote="aosp-google-caimito"/>
 
 	<!-- vendor -->
 	<project name="vendor_google_komodo" path="vendor/google/komodo" remote="caimito-evox"/>
+
+	<!-- Packages -->
+	<project name="packages_apps_PixelParts" path="packages/apps/PixelParts" remote="caimito-evox" />
 </manifest>
